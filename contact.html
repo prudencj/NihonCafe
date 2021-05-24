@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihon, Arigato – A Japanese Café </title>
+    <link rel="stylesheet" href="cafe.css">
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+<style>
+    body {
+
+      background-color: #ccc;
+      opacity: unset;
+
+    }
+</style>
+<body>
+
+    <div class="nav" id="mynav">
+
+          <a href="index.html" class="nav">Home</a>
+          <a href="Menu.html" class="nav">Menu</a>
+
+          <a href="about.html" class="nav">About</a>
+          <a href="#Contact" class="active">Contact</a>
+        </a>
+      </div>
+      <div class="container">
+        <div style="text-align:center">
+          <h2>Contact and Reservation</h2>
+          <p></p>
+        </div>
+        <div class="row">
+         <!-- <div class="column">
+            <img src="images/logo restaurant 2.jpg" style="width:100%">
+          </div>-->
+          <div class="column">
+           <div class="subtext"> <h1>Subscribe for news, events or questions</h1></div>
+
+           <form action="registration.php" method="GET">
+              <label for="email"></label>
+              <input type="email" id="email" name="email" placeholder="Enter Your Email">
+              <input type="submit" value="Submit">
+            </form>
+
+           <div class="subtext"> <h1>Reservations</h1></div>
+
+            <form action="reservation.php" method="GET">
+              <label for="fname">First name</label>
+              <input type="text" id="fname" name="fname"><br><br>
+              <label for="lname">Last name</label>
+              <input type="text" id="lname" name="lname"><br><br>
+              <label for="phone">Enter your phone number</label>
+              <input type="tel" id="phone" name="phone"  placeholder="(xxx) xxx xxxx">
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter Your Email">
+
+              <input type="submit" value="Submit">
+            </form>
+            <script src="onsubmit.js">
+            </script>
+
+          </div>
+        </div>
+      </div>
+</body>
+</html>

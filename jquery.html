@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<script type="text/javascript" src="jquery.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+$("button").click(function(){
+
+$.post("http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php)",
+
+{
+
+name: "",
+
+city: ""
+
+},
+
+function(data,status){
+
+alert("Data: " + data + "\nStatus: " + status);
+
+});
+
+});
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<button>Send an HTTP GET request to a page and get the result back</button>
+
+</body>
+
+</html>
